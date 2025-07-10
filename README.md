@@ -1,45 +1,30 @@
-# Academic Project Page Template
-This is an academic paper project page template.
+# MemoryTalker: Personalized Speech-Driven 3D Facial Animation via Audio-Guided Stylization
+### [Project Page](https://cau-irislab.github.io/interspeech25/) | [Paper](#) | [Video](#) [![arXiv](https://img.shields.io/badge/arXiv-24XX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/your-paper-id) [![GitHub](https://img.shields.io/github/stars/kimhyungkyu-1208/interspeech25?style=social)](https://github.com/kimhyungkyu-1208/MemoryTalker)
 
+**Interspeech 2025 (Accepted)**
 
-Example project pages built using this template are:
-- https://vision.huji.ac.il/spectral_detuning/
-- https://vision.huji.ac.il/podd/
-- https://dreamix-video-editing.github.io
-- https://vision.huji.ac.il/conffusion/
-- https://vision.huji.ac.il/3d_ads/
-- https://vision.huji.ac.il/ssrl_ad/
-- https://vision.huji.ac.il/deepsim/
+[Hyung Kyu Kim](https://kimhyungkyu-1208.github.io/HYUNG-KYU-KIM/) , [Hak Gu Kim]([#](https://hgkimcau.github.io/)) <br>
 
+This work addresses the subtle yet critical issues of jitter and unnatural lip movements in existing speech-driven 3D facial animations. We introduce a novel loss function, the Phonetic Context-aware Loss, which explicitly models the influence of preceding and following phonemes (coarticulation) to generate smoother and more realistic results.
 
+## What is Phonetic Context-aware Loss?
 
-## Start using the template
-To start using the template click on `Use this Template`.
+Traditional speech-driven 3D facial animation models are trained by minimizing the geometric error (e.g., MSE Loss) between the generated mesh and the ground truth on a frame-by-frame basis. This approach often fails to capture the continuous nature of facial motion, overlooking the phenomenon of 'coarticulation'—where the articulation of a sound is affected by its neighbors. This results in jittery and perceptually unnatural animations.
 
-The template uses html for controlling the content and css for controlling the style. 
-To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
+Our **Phonetic Context-aware Loss (<span class="math-inline">\\mathcal\{L\}\_\{pc\}</span>)** is a novel objective function that addresses this limitation. It computes a "viseme coarticulation weight" that quantifies how much a viseme's articulation is influenced by its phonetic context. By applying this weight, the model learns to pay more attention to frames with significant articulatory transitions, resulting in smoother, more natural, and intelligible 3D facial animations.
 
-**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
+## Citation
 
-## Components
-- Teaser video
-- Images Carousel
-- Youtube embedding
-- Video Carousel
-- PDF Poster
-- Bibtex citation
-
-## Tips:
-- The `index.html` file contains comments instructing you what to replace, you should follow these comments.
-- The `meta` tags in the `index.html` file are used to provide metadata about your paper 
-(e.g. helping search engine index the website, showing a preview image when sharing the website, etc.)
-- The resolution of images and videos can usually be around 1920-2048, there rarely a need for better resolution that take longer to load. 
-- All the images and videos you use should be compressed to allow for fast loading of the website (and thus better indexing by search engines). For images, you can use [TinyPNG](https://tinypng.com), for videos you can need to find the tradeoff between size and quality.
-- When using large video files (larger than 10MB), it's better to use youtube for hosting the video as serving the video from the website can take time.
-- Using a tracker can help you analyze the traffic and see where users came from. [statcounter](https://statcounter.com) is a free, easy to use tracker that takes under 5 minutes to set up. 
-- This project page can also be made into a github pages website.
-- Replace the favicon to one of your choosing (the default one is of the Hebrew University). 
-- Suggestions, improvements and comments are welcome, simply open an issue or contact me. You can find my contact information at [https://pages.cs.huji.ac.il/eliahu-horwitz/](https://pages.cs.huji.ac.il/eliahu-horwitz/)
+If you find our work useful, please consider citing our paper:
+```bibtex
+@inproceedings{kim2025learning,
+  title={Learning Phonetic Context-Dependent Viseme for Enhancing Speech-Driven 3D Facial Animation},
+  author={Hyung Kyu Kim and Hak Gu Kim},
+  booktitle={Proc. INTERSPEECH},
+  year={2025},
+  organization={ISCA}
+}
+```
 
 ## Acknowledgments
 Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
