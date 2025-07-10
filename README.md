@@ -1,5 +1,5 @@
 # MemoryTalker: Personalized Speech-Driven 3D Facial Animation via Audio-Guided Stylization
-### [Project Page](https://cau-irislab.github.io/interspeech25/) | [Paper](#) | [Video](#) [![arXiv](https://img.shields.io/badge/arXiv-24XX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/your-paper-id) [![GitHub](https://img.shields.io/github/stars/kimhyungkyu-1208/interspeech25?style=social)](https://github.com/kimhyungkyu-1208/MemoryTalker)
+### [Project Page](https://cau-irislab.github.io/ICCV25-MemoryTalker/) | [Paper](#) | [Video](#) [![arXiv](https://img.shields.io/badge/arXiv-24XX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/your-paper-id) [![GitHub](https://img.shields.io/github/stars/kimhyungkyu-1208/interspeech25?style=social)](https://github.com/kimhyungkyu-1208/MemoryTalker)
 
 **Interspeech 2025 (Accepted)**
 
