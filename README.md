@@ -1,30 +1,7 @@
 # MemoryTalker: Personalized Speech-Driven 3D Facial Animation via Audio-Guided Stylization
-### [Project Page](https://cau-irislab.github.io/ICCV25-MemoryTalker/) | [Paper](#) | [Video](#) [![arXiv](https://img.shields.io/badge/arXiv-24XX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/your-paper-id) [![GitHub](https://img.shields.io/github/stars/kimhyungkyu-1208/interspeech25?style=social)](https://github.com/kimhyungkyu-1208/MemoryTalker)
+### [Project Page](https://cau-irislab.github.io/ICCV25-MemoryTalker/) | [Paper](#) | [Video](#) [![arXiv](https://img.shields.io/badge/arXiv-24XX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/your-paper-id) [![GitHub](https://img.shields.io/github/stars/kimhyungkyu-1208/MemoryTalker?style=social)](https://github.com/kimhyungkyu-1208/MemoryTalker)
 
 **ICCV 2025 (Accepted)**
-
-[Hyung Kyu Kim](https://kimhyungkyu-1208.github.io/HYUNG-KYU-KIM/) , [Hak Gu Kim]([#](https://hgkimcau.github.io/)) <br>
-
-We propose MemoryTalker which enables realistic and accurate 3D facial motion synthesis by reflecting speaking style only with audio input to maximize usability in applications.
-
-## What is Phonetic Context-aware Loss?
-
-Traditional speech-driven 3D facial animation models are trained by minimizing the geometric error (e.g., MSE Loss) between the generated mesh and the ground truth on a frame-by-frame basis. This approach often fails to capture the continuous nature of facial motion, overlooking the phenomenon of 'coarticulation'—where the articulation of a sound is affected by its neighbors. This results in jittery and perceptually unnatural animations.
-
-Our **Phonetic Context-aware Loss (<span class="math-inline">\\mathcal\{L\}\_\{pc\}</span>)** is a novel objective function that addresses this limitation. It computes a "viseme coarticulation weight" that quantifies how much a viseme's articulation is influenced by its phonetic context. By applying this weight, the model learns to pay more attention to frames with significant articulatory transitions, resulting in smoother, more natural, and intelligible 3D facial animations.
-
-## Citation
-
-If you find our work useful, please consider citing our paper:
-```bibtex
-@inproceedings{kim2025learning,
-  title={Learning Phonetic Context-Dependent Viseme for Enhancing Speech-Driven 3D Facial Animation},
-  author={Hyung Kyu Kim and Hak Gu Kim},
-  booktitle={Proc. INTERSPEECH},
-  year={2025},
-  organization={ISCA}
-}
-```
 
 ## Acknowledgments
 Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
