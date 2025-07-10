@@ -1,11 +1,11 @@
 # MemoryTalker: Personalized Speech-Driven 3D Facial Animation via Audio-Guided Stylization
 ### [Project Page](https://cau-irislab.github.io/ICCV25-MemoryTalker/) | [Paper](#) | [Video](#) [![arXiv](https://img.shields.io/badge/arXiv-24XX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/your-paper-id) [![GitHub](https://img.shields.io/github/stars/kimhyungkyu-1208/interspeech25?style=social)](https://github.com/kimhyungkyu-1208/MemoryTalker)
 
-**Interspeech 2025 (Accepted)**
+**ICCV 2025 (Accepted)**
 
 [Hyung Kyu Kim](https://kimhyungkyu-1208.github.io/HYUNG-KYU-KIM/) , [Hak Gu Kim]([#](https://hgkimcau.github.io/)) <br>
 
-This work addresses the subtle yet critical issues of jitter and unnatural lip movements in existing speech-driven 3D facial animations. We introduce a novel loss function, the Phonetic Context-aware Loss, which explicitly models the influence of preceding and following phonemes (coarticulation) to generate smoother and more realistic results.
+We propose MemoryTalker which enables realistic and accurate 3D facial motion synthesis by reflecting speaking style only with audio input to maximize usability in applications.
 
 ## What is Phonetic Context-aware Loss?
 
