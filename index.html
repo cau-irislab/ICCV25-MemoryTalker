@@ -138,7 +138,7 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        MemoryTalker: Realistic 3D facial animation from audio alone — no priors, just your voice. 
+        MemoryTalker: Realistic 3D facial animation from audio alone — no priors, just input voice. 
       </h2>
     </div>
   </div>
@@ -166,9 +166,33 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Paper Limitation -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Limitation</h2>
+
+        <figure class="image" style="margin-bottom: 2rem;">
+          <img src="static/images/fig_limitation.png" alt="The intuition of MemoryTalker for personalized speech-driven 3D facial animation.">
+        </figure>
+        <div class="content has-text-justified">
+          <p>
+            Previous studies on personalized 3D facial animation have practical limitations. Methods based on 
+            (a) one-hot encoding require speaker identity classes during inference, making it impossible for them to handle new, unseen speakers. This severely limits their practical application.
+            (b) a sequence of 3D facial meshes to control for different speaking styles. While these methods can capture the styles of unseen speakers, they are impractical for real-world applications because they require this additional 3D mesh data as input during inference.
+            (c) Our proposed MemoryTalker overcomes these limitations. It is designed to reflect a speaker's style using only the audio input. MemoryTalker does not require any prior information—such as speaker ID classes or reference facial meshes—at inference time, making it a more practical approach for real-world applications
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper Limitation -->
+
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
@@ -193,7 +217,7 @@
   </div>
 </div>
 </div>
-</section>
+</section> -->
 <!-- End image carousel -->
 
 
