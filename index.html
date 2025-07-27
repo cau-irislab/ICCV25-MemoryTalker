@@ -190,6 +190,32 @@
 </section>
 <!-- End paper Limitation -->
 
+<!-- Paper Proposed Method -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Proposed Method</h2>
+
+        <figure class="image" style="margin-bottom: 2rem;">
+          <img src="static/images/fig_method.png" alt="The intuition of MemoryTalker for personalized speech-driven 3D facial animation.">
+        </figure>
+        <div class="content has-text-justified">
+          <p>
+            Stage 1: Storing and Recalling General Facial Motion (Memorizing)
+            In the first stage, our goal is to create a Motion Memory that stores general facial motion features. To achieve this, we use the text representation extracted from an audio signal by an Automatic Speech Recognition (ASR) model as a query to access the memory. This allows the model to map the facial motions of various speakers for a single phoneme to a consistent representation, ensuring that it learns general and speaker-neutral facial movements (e.g., the common lip shape for the word "who"). The recalled general motion feature is then passed to a motion decoder to synthesize a base facial animation.
+          </p>
+          <p>
+            Stage 2: Generating Personalized Facial Motion (Animating)
+            In the second stage, we synthesize a personalized facial animation that reflects the speaker's unique style. To do this, we first encode a speaking style feature from the input audio using a style encoder trained with a triplet loss, which helps distinguish between different speakers' styles. This style feature is then used to refine and update the motion memory from Stage 1, creating a Stylized Motion Memory. This stylized memory now contains personalized motion information. Finally, the personalized motion feature is recalled and used by the motion decoder to generate the final 3D facial animation that accurately reflects both the speech content and the individual's speaking style.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper Proposed Method -->
+
 
 <!-- Image carousel -->
 <!-- <section class="hero is-small">
