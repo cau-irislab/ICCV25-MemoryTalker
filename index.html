@@ -252,7 +252,10 @@
         </figure>
         <div class="content has-text-justified">
           <p>
-            [cite_start]This analysis demonstrates the effectiveness of our proposed <strong>2-stage training strategy</strong> by visualizing the facial dynamics for the word "Stab"[cite: 6]. [cite_start]The model trained only with the 1st stage (top row, 'w/o 2-stage') produces animations with limited and less expressive lip motion[cite: 1]. [cite_start]This is quantitatively supported by the Mean of 3D Optical Flow, where its value ($0.897 \times 10^{-4}$) is significantly lower than the ground truth reference ($1.367 \times 10^{-4}$)[cite: 7, 9]. [cite_start]In contrast, after incorporating the 2nd stage for personalization (middle row, 'w/ 2-stage'), the model generates much more dynamic and accurate movements that closely match the reference[cite: 2, 3]. [cite_start]The optical flow value ($1.278 \times 10^{-4}$) becomes nearly identical to the ground truth[cite: 8, 9]. This visually confirms that our two-stage approach is crucial for capturing the subtle dynamics of realistic facial expressions.
+            This analysis demonstrates the effectiveness of our proposed <strong>two-stage training strategy</strong> by visualizing the facial dynamics for the word "Stab". 
+            The model trained only with the 1st stage (top row, 'w/o 2-stage') produces animations with limited and less expressive lip motion. 
+            In contrast, after incorporating the 2nd stage for personalization (middle row, 'w/ 2-stage'), the model generates much more dynamic and accurate movements that closely match the reference. 
+            This visually confirms that our two-stage approach is crucial for capturing the subtle dynamics of realistic facial expressions.
           </p>
         </div>
       </div>
@@ -271,7 +274,12 @@
         </figure>
         <div class="content has-text-justified">
           <p>
-            This t-SNE visualization illustrates how our two-stage training effectively disentangles unique speaker styles. [cite_start]In the left plot (a), showing the feature distribution without the 2nd stage, the motion features from different speakers (represented by different colors) are heavily overlapped and poorly separated[cite: 16]. This indicates the model is only learning generic, non-personalized motions. However, the right plot (b) shows the result after our full two-stage training. [cite_start]The features for each speaker form distinct, well-defined clusters[cite: 10, 11, 12, 13, 14, 15, 16]. This proves that our model successfully learns to capture and separate personalized speaking styles from audio alone, which is essential for generating realistic, identity-specific animations.
+            This t-SNE visualization illustrates how our two-stage training effectively disentangles unique speaker styles.
+            In the left plot (a), showing the feature distribution without the 2nd stage, the motion features from different speakers (represented by different colors) are heavily overlapped and poorly separated. 
+            This indicates the model is only learning generic, non-personalized motions.
+            However, the right plot (b) shows the result after our full two-stage training.
+            The features for each speaker form distinct, well-defined clusters.
+            This proves that our model successfully learns to capture and separate personalized speaking styles from audio alone.
           </p>
         </div>
       </div>
